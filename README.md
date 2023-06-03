@@ -92,7 +92,7 @@ Step14. click on debug and simulate using simulation as shown below
 
 
 ## STM 32 CUBE PROGRAM :
-
+~~~
 #include "main.h"
 TIM_HandleTypeDef htim2;
 void SystemClock_Config(void);
@@ -199,7 +199,7 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 }
 #endif
-
+~~~
 
 
 
@@ -210,8 +210,7 @@ void assert_failed(uint8_t *file, uint32_t line)
 
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- 
- ![Uploading 242015110-25316d58-2525-4bfc-95e2-f194e4ba8ddf.png…]()
+ ![242015110-25316d58-2525-4bfc-95e2-f194e4ba8ddf](https://github.com/AavulaTharun/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/93427201/27260240-893a-4448-a050-30a8970e09be)
 
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION :
@@ -219,32 +218,33 @@ void assert_failed(uint8_t *file, uint32_t line)
 FOR PULSE AT 500:
 ![242015686-44783972-13a2-43a6-b1f4-8c1a7dad6f93](https://github.com/AavulaTharun/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/93427201/80353e75-7651-43c0-a94d-df2d3a780066)
 
-
+~~~
 TON = 2ms
 TOFF=2ms
 TOTAL TIME = 4ms
 FREQUENCY = 1/(TOTAL TIME)
           = 1/4=250Hz
-
+~~~
 FOR PULSE AT 700:
 ![242016045-36b39025-c8d5-4531-87fa-9eaa8e1d98fa](https://github.com/AavulaTharun/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/93427201/6d8038d4-6360-4cd9-9e84-9ba3ec0f2f17)
-
+~~~
 TON = 3ms
 TOFF= 1ms
 TOTAL TIME = 4ms
 FREQUENCY = 1/(TOTAL TIME)
           =1/4=250Hz
-
+~~~
 
 FOR PULSE AT 900:
 ![242016098-5e0f895e-2c0b-4528-a470-a61c8e4c7442](https://github.com/AavulaTharun/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/93427201/d8e1e2bf-997b-46da-92d2-0bae35d12a7d)
 
+~~~
 TON = 3.5
 TOFF= 0.5
 TOTAL TIME = 4ms
 FREQUENCY = 1/(TOTAL TIME)
           =1/4=250Hz
-
+~~~
 
 ## Result :
 A PWM Signal is generated using the following frequency and various duty cycles are simulated.
